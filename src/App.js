@@ -1,6 +1,7 @@
 import Home from './Layouts/Home/Home'
 import Users from './Layouts/Users/Users'
 import Menu from './components/Menu/Menu'
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 import {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/posts" component={withRouter(Users)}/>
           <Route exact path="/" component={withRouter(Home)}/>
         </Switch>
+        <Footer/>
     </Router>
 </div>
   );

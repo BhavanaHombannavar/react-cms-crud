@@ -7,8 +7,8 @@ import {
 
 function Menu () {
   return (
-    <header className="container">
-    <nav className="navbar navbar-expand-lg">
+    <header className="header">
+    <nav className="container navbar navbar-expand-lg">
 		    <div className="container-fluid menu-container">
             <Link to="/"  className="navbar-brand" rel="home">CMS</Link>
 		        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

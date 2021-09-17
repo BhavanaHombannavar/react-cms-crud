@@ -19,8 +19,7 @@
 }*/
 .card {
   border: transparent;
-  background: transparent;
-  margin-bottom: 30px;
+  background: #F0F0F0;
 }
 .infos {
   width: 100%;
@@ -43,16 +42,16 @@
 }
 
 .title {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   text-transform: capitalize;
 }
 .text{
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5px;
 }
 .date {

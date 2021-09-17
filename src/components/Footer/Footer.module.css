@@ -1,0 +1,16 @@
+.footer_con{
+  background: #0C0D07;
+  padding: 60px 0;
+  box-shadow: 1px -3px 4px 0px #fff;
+  border-top: 3px solid #fff;
+}
+.footer_con h3{
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.footer_con h4{
+  color: #C3C3C1;
+  font-weight: 400;
+  font-size: 1.2rem;
+}

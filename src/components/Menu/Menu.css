@@ -10,3 +10,7 @@
 .nav-link:hover, .navbar-brand:hover{
   color: #F32C57;
 }
+.header{
+  /* box-shadow: 0px 2px 5px 0px #f0f0f0; */
+  box-shadow: inset 0px -2px 4px 0px #9c9c9c;
+}
