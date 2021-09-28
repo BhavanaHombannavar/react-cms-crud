@@ -9,6 +9,7 @@
 }
 .nav-link:hover, .navbar-brand:hover{
   color: #F32C57;
+  color: #d89a00;
 }
 .header{
   /* box-shadow: 0px 2px 5px 0px #f0f0f0; */

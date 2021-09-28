@@ -11,9 +11,9 @@
       "withStory": false,
       "withLazy": false
     },
-    "Layouts": {
-      "path": "src/Layouts",
-      "withStyle": true,
+    "Services": {
+      "path": "src/Services",
+      "withStyle": false,
       "withTest": false,
       "withStory": false,
       "withLazy": false
