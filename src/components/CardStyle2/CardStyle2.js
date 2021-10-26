@@ -6,9 +6,12 @@ function CardStyle2({post, single}){
   return (
     <div className={`${styles.card} card`}>
         <h5 className={styles.title}>{post.post.title}</h5>
-        <span className={styles.date}>August 12, 2021 | Author</span>
+        <span className={styles.date}>August 12, 2021 | {post.user.name}</span>
          <p className={styles.text}>
-          { single === false ? 'uia et suscipit\nsuscipit recusandae consequuntur expedita et cum nreprehenderit':'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n isi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c ulpa qui officia deserunt mollit anim id est laborum.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n isi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident.'}
+          { single === false ? post.post.body.length < 80 ? post.post.body : post.post.body.slice(0, 75)+'...'
+            :
+            post.post.body.length < 670 ? post.post.body : post.post.body.slice(0, 665)+'...'
+          }
         </p>
         <span className={styles.read_more}>Read More <i className="fa fa-long-arrow-right"></i></span>
     </div>
