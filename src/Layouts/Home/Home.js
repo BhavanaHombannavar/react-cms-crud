@@ -43,12 +43,17 @@ function Home (){
         return Promise.all(promises)
     })
     .then(() => {
-        console.log('job done')
+        // console.log('job done')
         setUpdateState(true);
     })
  }, [updateState]);
+
+ let currentcount=0;
+
   return (<>
-  // {console.log(renderposts)}
+  {
+    //console.log(renderposts)
+  }
   <section className={styles.banner}>
     <div className="container">
       <h1>Hello ReactJs</h1>
@@ -72,11 +77,20 @@ function Home (){
 <div className="container cardstyle2">
 <div className="row">
   <div className="col-md-6 cardstyle2-left">
-    <CardStyle2 single={true}/>
+    {
+      renderposts.map((posts, index)=>{
+         if(index<1){
+           currentcount += 1;
+           return <CardStyle2 post={posts} single={true} key={posts.post.id}/>
+        }
+    })}
   </div>
   <div className="col-md-6 cardstyle2-right">
-    <CardStyle2 single={false}/>
-    <CardStyle2 single={false}/>
+      {renderposts.map((posts, index)=>{
+           if(!(currentcount > index) && index < currentcount + 2){
+             return <CardStyle2 post={posts} single={false} key={posts.post.id}/>
+          }
+      })}
   </div>
 </div>
 </div>
